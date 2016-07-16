@@ -8,8 +8,6 @@ $dbname = "backl89";
 
 $url = $_POST["url"];
 
-echo $url;
-
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
