@@ -1,10 +1,10 @@
 <?php
 
 
-$servername = "db4free.net:3306";
-$username = "backlink9";
-$password = "rootpass";
-$dbname = "backl89";
+$servername = "sql100.byethost4.com";
+$username = "b4_18540083";
+$password = "TechToday";
+$dbname = "b4_18540083_bl;
 
 $url = $_POST["url"];
 
