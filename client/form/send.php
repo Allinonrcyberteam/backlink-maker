@@ -1,5 +1,5 @@
 <?php
- $url = $_GET["url"]
+ $url = $_GET["url"];
 
 echo $url;
   ?>
