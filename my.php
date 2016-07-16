@@ -4,10 +4,9 @@
 $servername = "sql100.byethost4.com";
 $username = "b4_18540083";
 $password = "TechToday";
-$dbname = "b4_18540083_bl;
+$dbname = "b4_18540083_bl";
 
 $url = $_POST["url"];
-
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
