@@ -1,12 +1,10 @@
 <?php
 
-
 $servername = "sql100.byethost4.com:3306";
 $username = "b4_18540083";
 $password = "TechToday";
 $dbname = "b4_18540083_bl";
 
-$url = $_POST["url"];
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -15,16 +13,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO backlinks (url)
-VALUES ('$url')";
-
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
- $msql = "SELECT url FROM backlinks";
+$msql = "SELECT url FROM backlinks";
 $result = $conn->query($msql);
 
 if ($result->num_rows > 0) {
@@ -37,4 +26,5 @@ if ($result->num_rows > 0) {
 }
 
 $conn->close();
+
 ?>
